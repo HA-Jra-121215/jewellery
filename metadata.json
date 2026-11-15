@@ -1,0 +1,8 @@
+{
+  "name": "AURELLE — Haute Joaillerie",
+  "description": "AURELLE fine jewellery maison: interactive 3D diamond and gold creations, editorial collections, and bespoke showroom shopping.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

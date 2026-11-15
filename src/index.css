@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --color-burgundy-950: #0d0508;
+  --color-burgundy-900: #1c050c;
+  --color-burgundy-800: #2a0813;
+  --color-burgundy-700: #3d0d1d;
+  --color-champagne-100: #faf7f2;
+  --color-champagne-200: #f4ece2;
+  --color-champagne-300: #e8dccb;
+  --color-champagne-400: #d8c7af;
+  --color-gold-300: #e3cb98;
+  --color-gold-400: #d2b06b;
+  --color-gold-500: #c8a25a;
+  --color-gold-600: #a5803c;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-serif {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom luxury thin scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #140409;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(200, 162, 90, 0.35);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(200, 162, 90, 0.65);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
